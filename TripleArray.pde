@@ -54,7 +54,11 @@ class TripleArray {
   }
   
   public SoundFile getFile(String name) {
-    return files[getFirstIndex(name, 0)];
+    int index = getFirstIndex(name, 0);
+    if(index == -1){
+      return null;
+    }
+    return files[index];
   }
   
   public Button upOctave(String name) {

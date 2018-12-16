@@ -6,6 +6,7 @@ class AudioEvent implements ActionEvent {
   }
   
   public void performTasks(){
+    file.amp(volume);
     file.play();
   }
 }

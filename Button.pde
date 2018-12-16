@@ -19,6 +19,7 @@ class Button {
   }
   
   void display() {
+    textAlign(CENTER);
     fill(fill);
     stroke(stroke);
     rect(xpos, ypos, horizontal, vertical, 5);
